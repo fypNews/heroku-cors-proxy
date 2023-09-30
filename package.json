@@ -5,8 +5,8 @@
   "description": "A ready to ship CORS proxy for Heroku",
   "main": "server/index.js",
   "engines": {
-    "node": "^8.9",
-    "npm": ">=5.5"
+    "node": "^18.17.0 || >=20.5.0", // Diperbarui versi Node.js sesuai dengan rekomendasi
+    "npm": ">=6.13.4" // Diperbarui versi npm sesuai dengan rekomendasi
   },
   "scripts": {
     "test": "cross-env LOG_LEVEL=emerg nyc mocha -r mocha-setup.js --timeout 20000 --globals \"expect assert request\" -c ./server/**/*.spec.js ./server/*.spec.js",
