@@ -17,7 +17,7 @@ describe("Origin whitelist", () => {
   });
   
   describe("Base whitelist", () => {
-    before(() => process.env.ORIGIN_WHITELIST = 'localhost,127.0.0.1');
+    before(() => process.env.ORIGIN_WHITELIST = '');
     
     it('Is array', () => expect(Array.isArray(whitelist)).to.equal(true));
     it('Is frozen', () => expect(Object.isFrozen(whitelist)).to.equal(true));
