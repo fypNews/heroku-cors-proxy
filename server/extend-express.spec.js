@@ -63,8 +63,8 @@ describe("Extend express", () => {
     let app;
     
     before(() => {
-      process.env.ORIGIN_WHITELIST = 'localhost,127.0.0.1';
-      process.env.TARGET_WHITELIST = '127.0.0.1';
+      process.env.ORIGIN_WHITELIST = '';
+      process.env.TARGET_WHITELIST = '';
       
       delete require.cache[require.resolve('./conf/origin-whitelist')];
       delete require.cache[require.resolve('./filter/origin-whitelist-403')];
