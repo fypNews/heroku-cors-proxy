@@ -11,7 +11,7 @@ if (process.env.ORIGIN_WHITELIST) {
   }
 } else {
   Log.warning('The ORIGIN_WHITELIST env variable is not set. Requests will be allowed from all origins!');
-  originWhitelist = true;
+  originWhitelist = false;
 }
 
 module.exports = originWhitelist;
